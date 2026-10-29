@@ -1,0 +1,49 @@
+{
+  "email": "mostafakadry806@gmail.com",
+  "playStoreUrl": "",
+  "policyUpdated": "2026-10-29",
+  "androidPackage": "com.money_map.app",
+  "defaultLang": "ar",
+  "langs": {
+    "ar": {
+      "dir": "rtl",
+      "locale": "ar_EG",
+      "name": "MoneyMap",
+      "tagline": "خريطة أموالك",
+      "developer": "مصطفى قدري",
+      "skip": "انتقل إلى المحتوى",
+      "navLabel": "القائمة الرئيسية",
+      "switchLabel": "English",
+      "switchAria": "Switch to English",
+      "playCta": "حمّل من Google Play",
+      "playSoon": "رابط Google Play قريبًا",
+      "nav": {
+        "home": "الرئيسية",
+        "privacy": "سياسة الخصوصية",
+        "delete-account": "حذف الحساب",
+        "contact": "تواصل معنا"
+      },
+      "menu": "القائمة"
+    },
+    "en": {
+      "dir": "ltr",
+      "locale": "en_US",
+      "name": "MoneyMap",
+      "tagline": "Your money, mapped.",
+      "developer": "Mostafa Kadry",
+      "skip": "Skip to content",
+      "navLabel": "Main",
+      "switchLabel": "العربية",
+      "switchAria": "التبديل إلى العربية",
+      "playCta": "Get it on Google Play",
+      "playSoon": "Google Play link coming soon",
+      "nav": {
+        "home": "Home",
+        "privacy": "Privacy Policy",
+        "delete-account": "Delete account",
+        "contact": "Contact"
+      },
+      "menu": "Menu"
+    }
+  }
+}

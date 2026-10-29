@@ -1,0 +1,126 @@
+---
+title: Privacy Policy
+nav: privacy
+description: How the MoneyMap Android app handles your data. What stays on your device, what is sent to our cloud service only if you sign in, how it is protected, how long it is kept and how to delete it.
+---
+    <div class="page-head"><div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: {{site.updated}} &middot; App: {{site.name}} for Android (<code>{{site.package}}</code>) &middot; Developer: {{site.developer}}</p>
+    </div></div>
+
+    <div class="wrap prose">
+      <div class="callout">
+        <p><strong>In short.</strong> {{site.name}} works without an account and keeps your financial data on your device. If you choose to sign in, we store your e-mail address and, on a paid plan, a cloud backup and synced records. There are no ads, no analytics and no crash-reporting services in the app, and we do not sell your data.</p>
+      </div>
+
+      <details class="toc">
+        <summary>Contents</summary>
+        <ol>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#local">Data on your device</a></li>
+          <li><a href="#account">Optional account</a></li>
+          <li><a href="#backup">Cloud backup</a></li>
+          <li><a href="#sync">Sync</a></li>
+          <li><a href="#third">Third-party services</a></li>
+          <li><a href="#permissions">Device features and permissions</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#retention">Retention and deletion</a></li>
+          <li><a href="#choices">Your choices</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </details>
+
+      <h2 id="who">1. Who we are</h2>
+      <p>{{site.name}} is developed and operated by {{site.developer}} (&ldquo;we&rdquo;). You can reach us at <a href="mailto:{{site.email}}">{{site.email}}</a>. This policy describes what the {{site.name}} Android app and its optional cloud service do with your data.</p>
+
+      <h2 id="local">2. Data on your device</h2>
+      <p>The data you enter is stored on your phone: accounts and opening balances, transactions (amounts, dates, notes, categories), categories, recurring rules, budgets, savings goals, gold holdings, and your settings (language, currency, theme, notification choices).</p>
+      <ul>
+        <li><strong>Without an account, none of this is sent to us.</strong> We do not receive it and cannot see it.</li>
+        <li><strong>Exports.</strong> When you export your data (for example a JSON backup, CSV or PDF report) the file is created on your device and handed to the app you pick in Android&rsquo;s share sheet. Once shared, it is outside {{site.name}}&rsquo;s control.</li>
+      </ul>
+
+      <h2 id="account">3. Optional account</h2>
+      <p>You only need an account for cloud features. You can sign in with:</p>
+      <ul>
+        <li><strong>E-mail code.</strong> You enter your e-mail address and we send a one-time code. We store your e-mail address.</li>
+        <li><strong>Google.</strong> Google tells our sign-in service your e-mail address and, if available, your name and profile picture address. We keep those fields with your account and on your device to show your profile.</li>
+      </ul>
+      <p>Account records are kept by our authentication provider (see <a href="#third">third-party services</a>). The sign-in session is stored on your device inside the encrypted database. We also keep a record of your plan (Basic or paid) so the server can decide which cloud features you may use. A random identifier of each app installation (device ID) is attached to synced changes.</p>
+
+      <h2 id="backup">4. Cloud backup (paid plans)</h2>
+      <p>A cloud backup is one snapshot of your {{site.name}} data per account.</p>
+      <ul>
+        <li>It is <strong>encrypted on your device</strong> before it is uploaded. The server stores the encrypted text, the data format version and the time of the last update. <strong>We cannot read the contents.</strong></li>
+        <li>The encryption key is generated on your device and protected by a backup password you choose (and optionally a passkey). Your password is never sent to or stored by us. <strong>If you forget it, the backup cannot be recovered</strong> &ndash; there is no recovery key.</li>
+        <li>New backups replace the previous one. You can restore on another device with your password; before a restore the app saves a copy of what was on the device so you can undo it.</li>
+        <li>Uploading backups needs an active paid plan. Reading and deleting your own backup is always allowed.</li>
+      </ul>
+
+      <h2 id="sync">5. Sync (paid plans)</h2>
+      <p>Sync keeps several devices, or the members of a shared workspace, up to date. It is a separate system from the private backup, with a different protection level:</p>
+      <ul>
+        <li>Synced records are accounts, transactions, categories, recurring rules, budgets, goals and gold holdings. They are stored on our cloud service as <strong>readable data</strong> protected by row-level access rules and the provider&rsquo;s encryption in transit and at rest.</li>
+        <li>Each record also stores technical fields: who created and last changed it, timestamps, a version counter and the device ID. Deleted records leave a marker without content.</li>
+        <li>Settings (language, theme, app lock, notifications) are never synced.</li>
+        <li>Changes are announced to your other devices through a message that contains only record identifiers and counts, never amounts or names.</li>
+        <li>Basic (free) accounts do not sync; their data is not stored on the server.</li>
+        <li>Shared workspaces are a server-side capability that is not yet available in the app. If they are enabled, their members would be able to see the workspace&rsquo;s records, and we will update this policy.</li>
+      </ul>
+
+      <h2 id="third">6. Third-party services</h2>
+      <div class="table-scroll"><table>
+        <thead><tr><th>Service</th><th>Used for</th><th>What it receives</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Google Sign-In</strong></td><td>Optional &ldquo;Continue with Google&rdquo;.</td><td>Handled in your browser between you, Google. Google&rsquo;s own privacy policy applies to that step.</td></tr>
+          <tr><td><strong>open.er-api.com</strong></td><td>Exchange rates for converting between currencies. Fetched automatically (cached for 12 hours).</td><td>A standard web request: your IP address and device details. <strong>No account or financial data is sent.</strong></td></tr>
+          <tr><td><strong>gold-api.com</strong></td><td>Gold spot price, when gold prices are refreshed.</td><td>A standard web request: your IP address and device details. <strong>No account or financial data is sent.</strong></td></tr>
+          <tr><td><strong>Google Play</strong></td><td>Distributing and updating the app.</td><td>Governed by Google Play&rsquo;s own terms and privacy policy.</td></tr>
+        </tbody>
+      </table></div>
+      <p>The app contains no advertising, analytics, tracking or crash-reporting libraries. We do not sell or rent your data and do not share it for advertising. Data is shared only with the service providers above, to operate the features you use.</p>
+
+      <h2 id="permissions">7. Device features and permissions</h2>
+      <ul>
+        <li><strong>Internet:</strong> for exchange and gold rates and, if you sign in, the cloud features.</li>
+        <li><strong>Notifications (optional):</strong> reminders for upcoming recurring transactions and budget alerts, scheduled on your device. Their text never contains amounts, because notifications can appear on a locked screen.</li>
+        <li><strong>Biometrics (optional):</strong> to unlock the app with fingerprint or face.</li>
+        <li>{{site.name}} does not ask for your location, contacts, camera, microphone, SMS or call history.</li>
+      </ul>
+
+      <h2 id="security">8. Security</h2>
+      <ul>
+        <li>On-device database encryption (SQLCipher) with the key in the Android Keystore; app lock with a hashed PIN and attempt throttling.</li>
+        <li>Connections to the cloud service use HTTPS/TLS.</li>
+        <li>Cloud backups are encrypted on your device before upload. Cloud access rules are enforced in the database itself (row-level security), so each person can only read their own data, and paid-plan limits are checked on the server.</li>
+        <li>Amounts are hidden by default in the app until you tap the eye icon.</li>
+      </ul>
+      <p>No method of storage or transmission is perfectly secure, and we cannot guarantee absolute security. Keep your phone locked, and choose a strong, unique backup password.</p>
+
+      <h2 id="retention">9. Retention and deletion</h2>
+      <ul>
+        <li><strong>On your device:</strong> until you delete it (&ldquo;clear all data&rdquo; in Settings) or uninstall the app.</li>
+        <li><strong>Your account and cloud data:</strong> kept while your account exists. You can delete your account and all its cloud data at any time, <strong>inside the app (Profile &rarr; Delete my account and cloud data) or by asking us on the <a href="{{home}}delete-account/">account deletion page</a> if you no longer have the app</strong>. Deletion in the app is immediate and permanent. A request by e-mail is handled after we verify it comes from the account holder, within 30 days. Either way it removes your account, backup, plan record and synced records.</li>
+        <li><strong>What may remain:</strong> the cloud provider may keep its own routine infrastructure backups for a period set by that provider, after which they expire; we do not control that schedule. Details are on the <a href="{{home}}delete-account/#retained">deletion page</a>.</li>
+        <li>Exchange-rate and gold-price results are cached on your device only.</li>
+      </ul>
+
+      <h2 id="choices">10. Your choices</h2>
+      <ul>
+        <li>Use {{site.name}} with no account at all.</li>
+        <li>Export your data from the app at any time.</li>
+        <li>Turn notifications and app lock on or off in Settings.</li>
+        <li>Delete your account and cloud data, as described above. For any other request about your data, write to <a href="mailto:{{site.email}}">{{site.email}}</a>.</li>
+      </ul>
+
+      <h2 id="children">11. Children</h2>
+      <p>{{site.name}} is not directed to children, and we do not knowingly collect personal information from them. If you believe a child has created an account, contact us and we will delete it.</p>
+
+      <h2 id="changes">12. Changes to this policy</h2>
+      <p>If the app&rsquo;s data practices change (for example, when new cloud features launch), we will update this page and its &ldquo;last updated&rdquo; date before the change takes effect.</p>
+
+      <h2 id="contact">13. Contact</h2>
+      <p>{{site.developer}} &ndash; <a href="mailto:{{site.email}}">{{site.email}}</a>. See also the <a href="{{home}}contact/">contact page</a>.</p>
+    </div>

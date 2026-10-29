@@ -1,0 +1,13 @@
+{
+  "name": "moneymap-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Public website for MoneyMap (privacy policy, account deletion, contact). Static, no dependencies.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "node build.mjs && node scripts/serve.mjs",
+    "check": "node build.mjs && node scripts/check-links.mjs"
+  }
+}

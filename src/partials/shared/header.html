@@ -1,0 +1,17 @@
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="{{home}}">
+        <img src="{{assets}}assets/img/icon-192.png" width="36" height="36" alt="">
+        <span>{{site.name}}</span>
+      </a>
+      <a class="lang-switch" href="{{switch.href}}" lang="{{switch.lang}}" hreflang="{{switch.lang}}" aria-label="{{switch.aria}}">{{switch.label}}</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="{{site.menu}}" hidden>
+        <span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" aria-label="{{site.navLabel}}">
+        <ul class="nav">
+          {{nav}}
+        </ul>
+      </nav>
+    </div>
+  </header>
